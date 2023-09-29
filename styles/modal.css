@@ -1,0 +1,46 @@
+/* styles/modal.css (or use your preferred CSS-in-JS solution) */
+
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    opacity: 0;
+    z-index: 1000; /* Ensures the modal appears on top */
+  }
+  
+  .modal-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.3s ease-in-out;
+    opacity: 0;
+    z-index: 999; /* Z-index one less than the modal to ensure it's behind */
+    backdrop-filter: blur(5px); /* Applies a blur effect to the background */
+  }
+  
+  .modal-open {
+    transform: translate(-50%, -50%);
+    opacity: 1;
+  }
+  
+  .overlay-open {
+    opacity: 1;
+  }
+  
