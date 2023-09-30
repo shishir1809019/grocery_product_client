@@ -8,7 +8,7 @@ import {  useState } from "react";
 function Navbar({ products, onSearch }) {
   const { cart } = useCart();
   const [searchInput, setSearchInput] = useState("");
-  const [isSearchOpen, setIsSearchOpen] = useState(false); 
+  const [isSearchOpen, setIsSearchOpen] = useState(false);
 
   const handleSearchInputChange = (e) => {
     setSearchInput(e.target.value);
@@ -21,10 +21,10 @@ function Navbar({ products, onSearch }) {
     setSearchInput("");
     onSearch("");
   };
-
   const toggleSearch = () => {
     setIsSearchOpen(!isSearchOpen);
   };
+
   return (
     <nav className="bg-gray-500 p-4">
       <div className="container mx-auto flex justify-between items-center">
@@ -37,7 +37,7 @@ function Navbar({ products, onSearch }) {
             &#8801;
           </button>
         </div>
-        <div className={`lg:flex space-x-4 ${isSearchOpen ? 'hidden' : 'flex'}`}>
+        <div className={`lg:flex space-x-4 ${isSearchOpen ? "hidden" : "flex"}`}>
           <a href="#" className="text-white hover:text-gray-200">
             Home
           </a>
@@ -51,7 +51,7 @@ function Navbar({ products, onSearch }) {
             Contact
           </a>
         </div>
-        <div className={`lg:hidden ${isSearchOpen ? 'block' : 'hidden'}`}>
+        <div className={`lg:flex space-x-4 ${isSearchOpen ? "flex" : "hidden"}`}>
           <input
             value={searchInput}
             onChange={handleSearchInputChange}
