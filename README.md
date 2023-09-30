@@ -11,4 +11,4 @@ Server-side-code-link with django mysql: https://github.com/shishir1809019/groce
 - From modal user can add product to cart
 - If user click on cart icon from the navbar all added product showed
 - User can find the desired product by clicking search button
-- Server side I created with Node and also another one with django
+- Server side I created with Node and also another one with django 
