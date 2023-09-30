@@ -1,4 +1,3 @@
-/* styles/modal.css (or use your preferred CSS-in-JS solution) */
 
 .modal {
     position: fixed;
@@ -10,7 +9,7 @@
     border-radius: 8px;
     transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
     opacity: 0;
-    z-index: 1000; /* Ensures the modal appears on top */
+    z-index: 1000;
   }
   
   .modal-content {
@@ -25,14 +24,14 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    background-color: rgba(0, 0, 0, 0.5);
     display: flex;
     justify-content: center;
     align-items: center;
     transition: opacity 0.3s ease-in-out;
     opacity: 0;
-    z-index: 999; /* Z-index one less than the modal to ensure it's behind */
-    backdrop-filter: blur(5px); /* Applies a blur effect to the background */
+    z-index: 999; 
+    backdrop-filter: blur(5px); 
   }
   
   .modal-open {
