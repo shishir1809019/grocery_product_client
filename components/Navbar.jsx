@@ -31,7 +31,7 @@ function Navbar({ products, onSearch }) {
         <div className="text-white text-xl font-semibold">Grocery Shop</div>
         <div className="lg:hidden">
           <button
-            className="text-white text-2xl focus:outline-none"
+            className="text-white text-2xl focus:outline-none hover:bg-gray-700 px-1 rounded"
             onClick={toggleSearch}
           >
             &#8801;
