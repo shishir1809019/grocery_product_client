@@ -24,6 +24,6 @@
     "autoprefixer": "latest",
     "postcss": "latest",
     "tailwindcss": "latest",
-    "follow-redirects": "^latest_version"
+    "follow-redirects": "*"
   }
 }
