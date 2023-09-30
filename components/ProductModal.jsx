@@ -59,7 +59,6 @@ const ProductModal = ({ isOpen, product, onRequestClose }) => {
             Close
           </button>
         </div>
-        {/* You can add more details or actions for each product here */}
       </div>
     </Modal>
   );
